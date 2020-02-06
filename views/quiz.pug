@@ -1,0 +1,13 @@
+html
+	title quiz
+body
+
+	div#main
+		|
+		p=  "Creator: " +quiz.creator
+		p=  "Tags: " +quiz.tags
+		p Questions:
+		
+		each question in quiz.questions
+			a(href="http://localhost:3000/questions/"+(question["_id"]))= question.question
+			br

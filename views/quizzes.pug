@@ -1,0 +1,12 @@
+html
+	Quizzes
+	
+body
+
+	div#main
+		H1 quizzes:
+		
+		
+		each quiz in Quizzes
+			a(href="http://localhost:3000/quizzes/"+(quiz["_id"]))=  quiz["_id"]+ "(Made By " + quiz.creator +")"
+			br

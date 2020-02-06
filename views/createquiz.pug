@@ -1,0 +1,34 @@
+html
+	head
+	
+	body(onload = "makeRequest()")
+		h1  Current Quiz
+		
+		p Add question from bellow then press save to save your quiz.
+			
+		p Name:
+			input#name(type="textbox")
+		p Tags:
+			input#tags(type="textbox")
+		p Questions:
+			p#currentquestions
+		br
+		br
+		button#submit(type="button" onclick = "submitq()") Submit Quiz
+		br
+		p Category: 
+			select(onchange = "makeRequest()")#category
+				option(value="any")= "any"
+				each type in categories
+					option(value=type)= type
+		p difficulty:
+			select(onchange = "makeRequest()")#difficulty
+				option(value="any")= "any"
+				each diff in difficulties
+					option(value=diff)= diff
+		p Matching Questions:
+
+		p#q
+			
+		div#results
+		script(src= "http://localhost:3000/clientSide.js")

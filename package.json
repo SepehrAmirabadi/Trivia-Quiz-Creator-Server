@@ -1,0 +1,23 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "description": "a file based server and UI that allows you to create various different trivia game",
+  "main": "database-initializer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Author:",
+    "Sepehr",
+    "Eslami",
+    "Amirabadi"
+  ],
+  "author": "Sepehr Eslami Amirabadi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.3.4",
+    "pug": "^2.0.4"
+  }
+}

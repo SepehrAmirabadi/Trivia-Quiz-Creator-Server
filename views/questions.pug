@@ -1,0 +1,12 @@
+html
+	Questions
+	
+body
+
+	div#main
+		H1 question Search Results
+		
+		ul 
+			each q in questions
+				a( target = "_blank" href="http://localhost:3000/questions/"+(q["_id"]))=  q.question.replace(/&quot;/g,'"').replace(/&#039;/g,"'")
+				br

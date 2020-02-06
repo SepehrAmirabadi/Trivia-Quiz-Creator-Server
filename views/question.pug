@@ -1,0 +1,14 @@
+html
+body
+
+	div#main
+		|
+		p= question.question.replace(/&quot;/g,'"').replace(/&#039;/g,"'")
+		p
+			a(href="http://localhost:3000/questions?category="+(question.category))= "Category: " + question.category 
+			br
+			a(href="http://localhost:3000/questions?difficulty="+(question.difficulty))= "Difficuty: " + question.difficulty 
+			br
+		p= "Correct Answer:" + question["correct_answer"]
+		p= "Incorrect Answers:" + question["incorrect_answers"]
+
